@@ -27,17 +27,17 @@ x = [1, 2, 3, 4, 5]
 y = [3, 6, 2, 7, 1]
 sns.lineplot(x=x,y=y)
 ```
-<img width="338" alt="image" src="https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/1150690c-5d55-4021-9233-262ce6709c27">
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/c70a72b8-4bd8-4e50-a73c-de31d13846e0)
 
 ```
 df = sns.load_dataset("tips")
 df
 ```
-<img width="327" alt="image" src="https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/569a2d14-ab51-42b8-a283-e820efcaf30e">
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/98a1b520-54ae-40ba-8422-86ccec3a52ef)
 ```
 sns.lineplot(x="total_bill",y="tip", data=df, hue="sex", linestyle='solid', legend="auto")
 ```
-<img width="365" alt="image" src="https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/e80baaaf-329c-40c4-b352-8ff17b0fc5c0">
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/02274024-760f-4fa3-8b5a-4be12aa7843e)
 
 ```
 x=[1, 2, 3, 4, 5]
@@ -51,7 +51,7 @@ plt.title("Multi-Line Plot")
 plt.xlabel('X Label')
 plt.ylabel("Y Label")
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/4ce78848-1f66-423f-a089-2d21e620e13c)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/54e00e72-983c-4f69-a292-f308f1f88815)
 
 ```
 tips=sns.load_dataset('tips')
@@ -66,7 +66,7 @@ plt.title('Average Total Bill and Tip by Day')
 plt.legend()
 ```
 
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/f5bba551-600a-4637-b83a-5609247b0730)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/ddca1615-5374-463f-82e7-42cf2657027a)
 
 ```
 avg_total_bill = tips.groupby('time')['total_bill'].mean() 
@@ -74,7 +74,7 @@ avg_tip=tips.groupby('time') ['tip'].mean()
 p1= plt.bar(avg_total_bill.index, avg_total_bill, label='Total Bill', width=0.4)
 p2 = plt.bar(avg_tip.index,avg_tip,bottom=avg_total_bill,label='Tip', width=0.4)
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/9708b7ee-1b80-482e-8732-9ca3549f7c62)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/ed1b9886-c8c5-423d-bc45-a1e2d721d039)
 
 ```
 years=range(2000, 2012)
@@ -83,7 +83,7 @@ oranges = [0.962, 0.941, 0.930, 0.923, 0.918, 0.908, 0.907, 0.904, 0.901, 0.898,
 plt.bar(years, apples)
 plt.bar(years, oranges, bottom=apples)
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/d50ee79d-d92a-4639-87c4-7557bc49353f)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/278f0e20-642e-40e7-a29c-a69d121f3f54)
 
 ```
 import seaborn as sns
@@ -93,27 +93,27 @@ plt.xlabel('Day of the Week')
 plt.ylabel("Total Bill")
 plt.title('Total Bill by Day and Gender')
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/8b0f97e6-887a-480d-856a-6a4f4d6587cd)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/d67422f3-91fb-47b8-924d-0506dc74d744)
 
 ```
 tit=pd.read_csv("titanic_dataset.csv")
 tit
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/053e3d25-a0c1-4050-a9be-bf3f7a8e25a8)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/50c3ff76-8e9f-4640-a349-3f31d5ede790)
 
 ```
 plt.figure(figsize=(8,5))
 sns.barplot(x='Embarked', y='Fare', data=tit, palette='rainbow') 
 plt.title("Fare of Passenger by Embarked Town")
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/fd858e56-162f-4cb2-933f-756f8b275b41)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/d45944f2-73b3-481d-9126-5198108e2c90)
 
 ```
 plt.figure(figsize=(8,5))
 sns.barplot(x='Embarked', y='Fare', data=tit, palette='rainbow', hue='Pclass') 
 plt.title("Fare of Passenger by Embarked Town, Divided by Class")
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/b7b9e65f-da9b-4478-89be-0b685bb086d0)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/9f2e7529-d61d-4822-9dba-5221ad1a7986)
 
 ```
 tips=sns.load_dataset('tips')
@@ -122,36 +122,36 @@ plt.xlabel('Total Bill')
 plt.ylabel("Tip Amount")
 plt.title('Scatter Plot of Total Bill vs. Tip Amount')
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/6809b914-41c7-4509-b26d-5b36394467e9)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/1326fa8a-8d2b-4de5-9e20-258541786fca)
 
 ```
 num_var = np.random.randn(1000)
 num_var=pd.Series(num_var, name = "Numerical variable")
 num_var
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/0fd6af5d-13f2-44bc-8c51-3fac53c2659a)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/903f3dc6-04ba-40b7-b61d-f00ecb836980)
 
 ```
 sns.histplot(data = num_var, kde = True)
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/02db6aff-b4e2-4e81-837c-c004f553eb1c)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/9503be1c-d5aa-4c19-9b14-3a594dc9b6d3)
 
 ```
 df=pd.read_csv("titanic_dataset.csv")
 sns.histplot(data=df,x="Pclass", hue="Survived", kde=True)
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/7a687d37-9f63-4b80-adb6-8bb44298a29d)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/091116dd-e8a3-4057-9eb9-2f1fdef5fa4f)
 
 ```
 tips=sns.load_dataset('tips')
 sns.boxplot(x=tips['day'], y=tips ['total_bill'], hue=tips['sex'])
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/f1b68368-fc5a-4388-9ab3-6035ca1bc068)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/fb15f822-a553-4472-8086-982358c0aa43)
 ```
 sns.boxplot(x="day", y="total_bill", hue="smoker", data=tips, linewidth=2, width=0.6, boxprops={"facecolor": "lightblue", "edgecolor": "darkblue"},
 whiskerprops={"color": "black", "linestyle": "--", "linewidth": 1.5}, capprops={"color": "black", "linestyle": "--", "linewidth": 1.5})
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/e9e19e0a-f814-4a18-92d0-c5f863d4917a)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/eac17d85-eb26-4afd-8953-d8dfdcee6737)
 
 ```
 sns.violinplot(x="day", y="total_bill", hue="smoker", data=tips, linewidth=2, width=0.6, palette="Set3", inner="quartile")
@@ -159,54 +159,54 @@ plt.xlabel("Day of the Week")
 plt.ylabel("Total Bill")
 plt.title("Violin Plot of Total Bill by Day and Smoker Status")
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/1a5f08c3-da33-4dc2-be18-34818d3e1639)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/dc98c95f-fe20-47ba-9f49-374ee8e90862)
 
 ```
 mart=pd.read_csv("titanic_dataset.csv")
 mart
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/55e69a20-c26f-4d0d-98a1-74a74f677321)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/ecb14f2c-1746-46bf-84ea-97e6d283f859)
 ```
 mart=mart[['PassengerId', 'Survived', 'Age', 'Name', 'Ticket', 'Embarked']] 
 mart.head(10)
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/f2d68a01-a292-465b-a014-b486057df114)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/3e92398d-a20e-4bac-9a58-f834adbe96b9)
 
 ```
 sns.kdeplot(data=mart,x='PassengerId')
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/6a81ae93-2e25-4324-96fc-e82ab3bb9191)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/b02fe195-a4b9-46a0-98b3-ad89ee1164b5)
 
 ```
 sns.kdeplot(data=mart,x='Age')
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/5810ee99-74bb-42d1-b0a4-1c6cecbdb1f7)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/e7a6d9e8-aee7-4fea-b043-4ff9e07d3a4c)
 
 ```
 sns.kdeplot(data=mart)
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/ac9da33d-c0e9-420e-9aec-bfc4beb4de48)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/91f9fe74-598b-4f91-86e6-9f5f01e934fc)
 
 ```
 sns.kdeplot(data=mart,x='PassengerId',hue='Survived',multiple='stack')
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/adb3024a-19a9-4aa4-a7ca-a9ae8dfe898d)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/29425c11-0100-46d2-b94b-463624cc16a8)
 
 ```
 sns.kdeplot(data=mart,x='PassengerId',y='Survived')
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/8c866a9c-a44d-46dd-a77a-fab3c5439678)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/c9e7c7ce-60e2-4cdf-87ce-e7effec99ccd)
 
 ```
 data = np.random.randint(low = 1, high = 100, size = (10,10))
 hm=sns.heatmap(data=data,annot=True)
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/ca15b067-a509-45c5-98bf-dcdbccc89dea)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/3cc596f3-cf26-40cb-aa4f-01cccf758106)
 
 ```
 hm=sns.heatmap(data=data)
 ```
-![image](https://github.com/KayyuruTharani/EXNO-6-DS/assets/142209319/324a8ef9-1495-4c1c-baa2-3371f8732e87)
+![image](https://github.com/Aaron-0111/EXNO-6-DS/assets/149347631/9fbf0324-3ba6-447b-b034-2400d8f55bfd)
 
 
 # Result:
